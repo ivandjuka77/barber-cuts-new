@@ -1,0 +1,11 @@
+html,
+body {
+	margin: 0;
+	border: 0;
+	font-family: 'Manrope', sans-serif;
+	background-color: black;
+}
+
+* {
+	box-sizing: border-box;
+}
