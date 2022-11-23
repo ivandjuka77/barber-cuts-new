@@ -9,12 +9,13 @@ const About = () => {
 					Barber Cuts was founded in 2021 by the Abbott family and only
 					consisted of 2 members. <br />
 					Nowdays, our team consists of 10 artists, all with their own style,
-					personality and special touches.
-					<br /> We're a team of passionate barbers who live for the art of
-					cutting hair and making you look better. <br />
-					We take responsibility of you and your well-being while you're in our
-					house, <br />
-					and we love to see you enjoy your stay! <br />
+					personality and special <br />
+					touches. We're a team of passionate barbers who live for the art of
+					cutting hair and <br />
+					making you look better. We take responsibility of you and your
+					well-being while
+					<br /> you're in our house, and we love to see you enjoy your stay!{' '}
+					<br />
 					<br />
 				</p>
 			</div>

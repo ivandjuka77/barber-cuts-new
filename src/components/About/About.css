@@ -10,6 +10,11 @@
 	margin-left: 50px;
 }
 
+.about-text > h1 {
+	font-size: 2.5rem;
+	margin-bottom: 40px;
+}
+
 .about-text > p {
 	line-height: 35px;
 }
@@ -20,5 +25,8 @@
 
 .about-img {
 	margin: 0 5px;
+
 	height: 350px;
+
+	border-radius: 10px;
 }
