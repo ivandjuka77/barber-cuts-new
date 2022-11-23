@@ -1,8 +1,13 @@
 import './Navbar.css';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
 	return (
-		<nav className='navbar'>
+		<motion.nav
+			className='navbar'
+			whileInView={{ opacity: 1 }}
+			onViewportLeave={{ opacity: 0 }}
+		>
 			<h2 className='nav-logo-text'>Barber Cuts</h2>
 			<ul className='nav-links'>
 				<a
@@ -30,7 +35,7 @@ const Navbar = () => {
 					<li>Booking</li>
 				</a>
 			</ul>
-		</nav>
+		</motion.nav>
 	);
 };
 
