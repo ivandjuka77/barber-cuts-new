@@ -2,8 +2,16 @@ html,
 body {
 	margin: 0;
 	border: 0;
+
 	font-family: 'Manrope', sans-serif;
+
+	color: white;
+
 	background-color: black;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 * {
