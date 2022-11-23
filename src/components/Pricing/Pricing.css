@@ -29,7 +29,7 @@
 }
 
 .pricing-item {
-	width: 406px;
+	width: 410px;
 	display: flex;
 	flex-direction: column;
 
@@ -54,6 +54,7 @@
 .pricing-special {
 	text-align: center;
 	font-weight: 800;
+
 	line-height: 35px;
 
 	border: 1px solid #cbb035;
