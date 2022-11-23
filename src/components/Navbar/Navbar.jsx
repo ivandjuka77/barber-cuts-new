@@ -11,16 +11,16 @@ const Navbar = () => {
 			<h2 className='nav-logo-text'>Barber Cuts</h2>
 			<ul className='nav-links'>
 				<a
-					href='#'
+					href='#about'
 					className='nav-link'
 				>
 					<li>About us</li>
 				</a>
 				<a
-					href='#'
+					href='#pricing'
 					className='nav-link'
 				>
-					<li>Prices</li>
+					<li>Pricing</li>
 				</a>
 				<a
 					href='#'
