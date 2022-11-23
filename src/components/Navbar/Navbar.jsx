@@ -14,7 +14,7 @@ const Navbar = () => {
 					href='#'
 					className='nav-link'
 				>
-					<li>Gallery</li>
+					<li>About us</li>
 				</a>
 				<a
 					href='#'
@@ -26,13 +26,13 @@ const Navbar = () => {
 					href='#'
 					className='nav-link'
 				>
-					<li>About us</li>
+					<li>Booking</li>
 				</a>
 				<a
 					href='#'
 					className='nav-link'
 				>
-					<li>Booking</li>
+					<li>Career</li>
 				</a>
 			</ul>
 		</motion.nav>
