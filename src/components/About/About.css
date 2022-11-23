@@ -1,0 +1,24 @@
+.about {
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.about-text {
+	margin-left: 50px;
+}
+
+.about-text > p {
+	line-height: 35px;
+}
+
+.about-gallery {
+	display: flex;
+}
+
+.about-img {
+	margin: 0 5px;
+	height: 350px;
+}
