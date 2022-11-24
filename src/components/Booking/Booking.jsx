@@ -161,51 +161,87 @@ const Booking = () => {
 			id='booking'
 		>
 			<h1>Booking</h1>
-			<form>
-				<div className='category'>
-					<label htmlFor='hair'>Choose your category:</label>
-					<select
-						name='category'
-						id='category'
-						onChange={(e) => {
-							setCategory(e.target.value);
-							if (category === '') setPrice(0);
-						}}
-					>
-						<option
-							value=''
-							defaultValue
+			<div className='booking-content'>
+				<div className='content-form'>
+					<form>
+						<div className='category'>
+							<label htmlFor='hair'>Choose your category:</label>
+							<select
+								name='category'
+								id='category'
+								onChange={(e) => {
+									setCategory(e.target.value);
+									if (category === '') setPrice(0);
+								}}
+							>
+								<option
+									value=''
+									defaultValue
+								>
+									Category
+								</option>
+								<option value='hair'>Hair</option>
+								<option value='beard'>Beard</option>
+								<option value='hair-beard'>Hair & Beard</option>
+								<option value='minor-adjustments'>Minor Adjustments</option>
+								<option value='coloring'>Coloring</option>
+								<option value='skin'>Skin</option>
+								<option value='gold'>Gold Combo</option>
+							</select>
+						</div>
+						{showSelect()}
+					</form>
+					{category && price ? (
+						<motion.div
+							className='booking-total'
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 0.7 }}
 						>
-							Category
-						</option>
-						<option value='hair'>Hair</option>
-						<option value='beard'>Beard</option>
-						<option value='hair-beard'>Hair & Beard</option>
-						<option value='minor-adjustments'>Minor Adjustments</option>
-						<option value='coloring'>Coloring</option>
-						<option value='skin'>Skin</option>
-						<option value='gold'>Gold Combo</option>
-					</select>
+							<h1>
+								Your total:{' '}
+								<span>
+									{price === 'Price on arrival'
+										? 'Price on arrival'
+										: `${price}€`}
+								</span>
+							</h1>
+						</motion.div>
+					) : (
+						''
+					)}
 				</div>
-				{showSelect()}
-			</form>
-			{category && price ? (
-				<motion.div
-					className='booking-total'
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 0.5 }}
-				>
-					<h1>
-						Your total:{' '}
-						<motion.span transition={{ duration: 1 }}>
-							{price === 'Price on arrival' ? 'Price on arrival' : `${price}€`}
-						</motion.span>
-					</h1>
-				</motion.div>
-			) : (
-				''
-			)}
+
+				{category && price ? (
+					<div className='content-booking-options'>
+						<motion.div
+							className='booking-calendar'
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 1, delay: 0.5 }}
+						>
+							<h2>Use our calendar: </h2>
+							<a
+								href='https://calendly.com/barbercuts/60min'
+								target='blank'
+							>
+								<button>Calendar</button>
+							</a>
+						</motion.div>
+						<motion.div
+							className='booking-calendar'
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 1, delay: 1.2 }}
+						>
+							<h2>Or call us directly on:</h2>
+							<h3>(+387) 065 / 403-935</h3>
+						</motion.div>
+					</div>
+				) : (
+					''
+				)}
+			</div>
 		</div>
 	);
 };
