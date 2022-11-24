@@ -23,10 +23,10 @@ const Booking = () => {
 						onChange={(e) => setPrice(e.target.value)}
 					>
 						<option value=''>Select service</option>
-						<option value='25'>Men's Haircut 25€</option>
-						<option value='30'>Men's Haircut (Long hair) 30€</option>
-						<option value='20'>Men's Haircut (Juniors) 20€</option>
-						<option value='20'>Shaving 20€</option>
+						<option value='25'>Men's Haircut </option>
+						<option value='30'>Men's Haircut (Long hair) </option>
+						<option value='20'>Men's Haircut (Juniors) </option>
+						<option value='20'>Shaving </option>
 					</select>
 				</motion.div>
 			);
@@ -45,9 +45,9 @@ const Booking = () => {
 						onChange={(e) => setPrice(e.target.value)}
 					>
 						<option value=''>Select service</option>
-						<option value='20'>Beard Adjustment 20€</option>
-						<option value='25'>Beard Adjustment (Long beard) 25€</option>
-						<option value='20'>Beard Shaving 20€</option>
+						<option value='20'>Beard Adjustment </option>
+						<option value='25'>Beard Adjustment (Long beard) </option>
+						<option value='20'>Beard Shaving </option>
 					</select>
 				</motion.div>
 			);
@@ -66,9 +66,9 @@ const Booking = () => {
 						onChange={(e) => setPrice(e.target.value)}
 					>
 						<option value=''>Select service</option>
-						<option value='35'>Haircut & Beard Adjustment 35€</option>
-						<option value='40'>Haircut & Beard Adjustment (Long) 40€</option>
-						<option value='30'>Beard & Hair Shaving 30€</option>
+						<option value='35'>Haircut & Beard Adjustment </option>
+						<option value='40'>Haircut & Beard Adjustment (Long) </option>
+						<option value='30'>Beard & Hair Shaving </option>
 					</select>
 				</motion.div>
 			);
@@ -87,9 +87,9 @@ const Booking = () => {
 						onChange={(e) => setPrice(e.target.value)}
 					>
 						<option value=''>Select service</option>
-						<option value='5'>Nose Hair Removal 5€</option>
-						<option value='5'>Ear Cleaning 5€</option>
-						<option value='5'>Eyebrow adjustment 5€</option>
+						<option value='5'>Nose Hair Removal</option>
+						<option value='5'>Ear Cleaning</option>
+						<option value='5'>Eyebrow adjustment</option>
 					</select>
 				</motion.div>
 			);
@@ -108,7 +108,7 @@ const Booking = () => {
 						onChange={(e) => setPrice(e.target.value)}
 					>
 						<option value=''>Select service</option>
-						<option value='10'>Beard Coloring 10€</option>
+						<option value='10'>Beard Coloring </option>
 						<option value='Price on arrival'>
 							Hair Coloring (price on arrival)
 						</option>
@@ -130,7 +130,7 @@ const Booking = () => {
 						onChange={(e) => setPrice(e.target.value)}
 					>
 						<option value=''>Select service</option>
-						<option value='10'>Charcoal Peel Off Mask 10€</option>
+						<option value='10'>Charcoal Peel Off Mask </option>
 					</select>
 				</motion.div>
 			);
@@ -149,7 +149,7 @@ const Booking = () => {
 						onChange={(e) => setPrice(e.target.value)}
 					>
 						<option value=''>Select service</option>
-						<option value='70'>Gold Combo 70€</option>
+						<option value='70'>Gold Combo </option>
 					</select>
 				</motion.div>
 			);
@@ -167,7 +167,10 @@ const Booking = () => {
 					<select
 						name='category'
 						id='category'
-						onChange={(e) => setCategory(e.target.value)}
+						onChange={(e) => {
+							setCategory(e.target.value);
+							if (category === '') setPrice(0);
+						}}
 					>
 						<option
 							value=''
@@ -187,11 +190,19 @@ const Booking = () => {
 				{showSelect()}
 			</form>
 			{category && price ? (
-				<div className='booking-total'>
+				<motion.div
+					className='booking-total'
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.5 }}
+				>
 					<h1>
-						Your total: <span>{`${price}€`}</span>
+						Your total:{' '}
+						<motion.span transition={{ duration: 1 }}>
+							{price === 'Price on arrival' ? 'Price on arrival' : `${price}€`}
+						</motion.span>
 					</h1>
-				</div>
+				</motion.div>
 			) : (
 				''
 			)}
