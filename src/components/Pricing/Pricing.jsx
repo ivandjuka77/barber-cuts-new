@@ -12,7 +12,7 @@ const Pricing = () => {
 			<div className='pricing-list'>
 				<motion.div
 					className='pricing-hair pricing-section'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Hair</h2>
@@ -61,7 +61,7 @@ const Pricing = () => {
 
 				<motion.div
 					className='pricing-beard pricing-section'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Beard</h2>
@@ -98,7 +98,7 @@ const Pricing = () => {
 
 				<motion.div
 					className='pricing-both pricing-section'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Hair & Beard</h2>
@@ -136,7 +136,7 @@ const Pricing = () => {
 
 				<motion.div
 					className='pricing-depilation pricing-section'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Minor Adjustments</h2>
@@ -171,7 +171,7 @@ const Pricing = () => {
 
 				<motion.div
 					className='pricing-coloring pricing-section'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Coloring</h2>
@@ -198,7 +198,7 @@ const Pricing = () => {
 
 				<motion.div
 					className='pricing-skin pricing-section'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Skin</h2>
@@ -216,7 +216,7 @@ const Pricing = () => {
 
 				<motion.div
 					className='pricing-special pricing-section'
-					whileHover={{ scale: 1.05 }}
+					whileHover={{ scale: 1.03, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>
