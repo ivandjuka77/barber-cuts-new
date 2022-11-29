@@ -13,7 +13,7 @@ const Career = () => {
 			<div className='career-list'>
 				<motion.div
 					className='career-listing'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Barber / Stylist (Full-time)</h2>
@@ -30,12 +30,17 @@ const Career = () => {
 					</ul>
 					<div className='listing-bottom'>
 						<span>25€ - 30€ an hour</span>
-						<button>Apply</button>
+						<motion.button
+							whileHover={{ scale: 1.05 }}
+							transition={{ duration: 0.3, type: 'tween' }}
+						>
+							Apply
+						</motion.button>
 					</div>
 				</motion.div>
 				<motion.div
 					className='career-listing'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Barber / Stylist (Training) </h2>
@@ -52,12 +57,17 @@ const Career = () => {
 					</ul>
 					<div className='listing-bottom'>
 						<span>15€ an hour</span>
-						<button>Apply</button>
+						<motion.button
+							whileHover={{ scale: 1.05 }}
+							transition={{ duration: 0.3, type: 'tween' }}
+						>
+							Apply
+						</motion.button>
 					</div>
 				</motion.div>
 				<motion.div
 					className='career-listing'
-					whileHover={{ scale: 1.02 }}
+					whileHover={{ scale: 1.01, y: -5 }}
 					transition={{ duration: 0.3, type: 'tween' }}
 				>
 					<h2>Barbershop Manager</h2>
@@ -74,7 +84,12 @@ const Career = () => {
 					</ul>
 					<div className='listing-bottom'>
 						<span>30€ - 35€ an hour</span>
-						<button>Apply</button>
+						<motion.button
+							whileHover={{ scale: 1.05 }}
+							transition={{ duration: 0.3, type: 'tween' }}
+						>
+							Apply
+						</motion.button>
 					</div>
 				</motion.div>
 			</div>
