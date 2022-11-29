@@ -24,7 +24,7 @@ const Navbar = () => {
 					<li>Booking</li>
 				</a>
 				<a
-					href='#'
+					href='#career'
 					className='nav-link'
 				>
 					<li>Career</li>
