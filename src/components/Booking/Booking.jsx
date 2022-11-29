@@ -225,7 +225,12 @@ const Booking = () => {
 								href='https://calendly.com/barbercuts/60min'
 								target='blank'
 							>
-								<button>Calendar</button>
+								<motion.button
+									whileHover={{ scale: 1.03 }}
+									transition={{ duration: 0.3, type: 'tween' }}
+								>
+									Calendar
+								</motion.button>
 							</a>
 						</motion.div>
 						<motion.div
