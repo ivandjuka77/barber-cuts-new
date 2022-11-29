@@ -8,12 +8,6 @@ const Navbar = () => {
 			</a>
 			<ul className='nav-links'>
 				<a
-					href='#about'
-					className='nav-link'
-				>
-					<li>About us</li>
-				</a>
-				<a
 					href='#pricing'
 					className='nav-link'
 				>
