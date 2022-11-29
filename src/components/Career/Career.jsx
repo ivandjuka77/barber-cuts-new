@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import './Career.css';
 
 const Career = () => {
@@ -9,7 +11,11 @@ const Career = () => {
 			<h1>Career</h1>
 			<h2>Be a part of our mission.</h2>
 			<div className='career-list'>
-				<div className='career-listing'>
+				<motion.div
+					className='career-listing'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Barber / Stylist (Full-time)</h2>
 					<ul>
 						<li>Work in a team environment</li>
@@ -26,8 +32,12 @@ const Career = () => {
 						<span>25€ - 30€ an hour</span>
 						<button>Apply</button>
 					</div>
-				</div>
-				<div className='career-listing'>
+				</motion.div>
+				<motion.div
+					className='career-listing'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Barber / Stylist (Training) </h2>
 					<ul>
 						<li>Learn the ins and outs of how the business runs</li>
@@ -44,8 +54,12 @@ const Career = () => {
 						<span>15€ an hour</span>
 						<button>Apply</button>
 					</div>
-				</div>
-				<div className='career-listing'>
+				</motion.div>
+				<motion.div
+					className='career-listing'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Barbershop Manager</h2>
 					<ul>
 						<li>help your staff with clientele and business.</li>
@@ -62,7 +76,7 @@ const Career = () => {
 						<span>30€ - 35€ an hour</span>
 						<button>Apply</button>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);
