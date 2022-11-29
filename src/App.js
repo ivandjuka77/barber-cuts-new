@@ -8,7 +8,6 @@ function App() {
 	return (
 		<>
 			<Header />
-			<About />
 			<Pricing />
 			<Booking />
 			<Career />
