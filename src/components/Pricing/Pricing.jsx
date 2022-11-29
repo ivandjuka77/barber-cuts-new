@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import './Pricing.css';
 
 const Pricing = () => {
@@ -8,7 +10,11 @@ const Pricing = () => {
 		>
 			<h1>Pricing</h1>
 			<div className='pricing-list'>
-				<div className='pricing-hair pricing-section'>
+				<motion.div
+					className='pricing-hair pricing-section'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Hair</h2>
 					<div className='pricing-item'>
 						<span className='pricing-item-name'>
@@ -51,9 +57,13 @@ const Pricing = () => {
 							Full shave of the head mostly using a razor, washing.
 						</span>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className='pricing-beard pricing-section'>
+				<motion.div
+					className='pricing-beard pricing-section'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Beard</h2>
 					<div className='pricing-item'>
 						<span className='pricing-item-name'>
@@ -84,9 +94,13 @@ const Pricing = () => {
 							Full shave of the beard mostly using a razor, washing.
 						</span>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className='pricing-both pricing-section'>
+				<motion.div
+					className='pricing-both pricing-section'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Hair & Beard</h2>
 					<div className='pricing-item'>
 						<span className='pricing-item-name'>
@@ -118,9 +132,13 @@ const Pricing = () => {
 							washing.
 						</span>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className='pricing-depilation pricing-section'>
+				<motion.div
+					className='pricing-depilation pricing-section'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Minor Adjustments</h2>
 					<div className='pricing-item'>
 						<span className='pricing-item-name'>
@@ -149,9 +167,13 @@ const Pricing = () => {
 							Eyebrow adjustment, depilation, slits with razor.
 						</span>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className='pricing-coloring pricing-section'>
+				<motion.div
+					className='pricing-coloring pricing-section'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Coloring</h2>
 					<div className='pricing-item'>
 						<span className='pricing-item-name'>
@@ -172,9 +194,13 @@ const Pricing = () => {
 							(price depending on color & hair)
 						</span>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className='pricing-skin pricing-section'>
+				<motion.div
+					className='pricing-skin pricing-section'
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>Skin</h2>
 					<div className='pricing-item'>
 						<span className='pricing-item-name'>
@@ -186,9 +212,13 @@ const Pricing = () => {
 							exfoliating the skin, skin smoothing, acne & dark spots reduction.
 						</span>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className='pricing-special pricing-section'>
+				<motion.div
+					className='pricing-special pricing-section'
+					whileHover={{ scale: 1.05 }}
+					transition={{ duration: 0.3, type: 'tween' }}
+				>
 					<h2>
 						Gold Combo <span className='pricing-item-price'>70€</span>
 					</h2>
@@ -198,7 +228,7 @@ const Pricing = () => {
 							Cleaning, Nose Hair Removal, Styling & Cleaning.
 						</span>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);

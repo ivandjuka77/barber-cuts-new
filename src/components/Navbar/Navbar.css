@@ -16,6 +16,7 @@
 
 .nav-logo-text {
 	margin: 15px 40px;
+	transition: all 0.3s ease-in-out;
 }
 
 .nav-links {
@@ -35,4 +36,9 @@ a {
 
 .nav-link {
 	margin: 0 15px;
+	transition: all 0.3s ease-in-out;
+}
+.nav-link:hover,
+.nav-logo-text:hover {
+	color: #cbb035;
 }
