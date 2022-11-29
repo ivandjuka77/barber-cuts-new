@@ -36,6 +36,9 @@ a {
 
 .nav-link {
 	margin: 0 15px;
+
+	text-transform: capitalize;
+
 	transition: all 0.3s ease-in-out;
 }
 .nav-link:hover,

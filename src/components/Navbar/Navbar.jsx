@@ -7,24 +7,15 @@ const Navbar = () => {
 				<h2 className='nav-logo-text'>Barber Cuts</h2>
 			</a>
 			<ul className='nav-links'>
-				<a
-					href='#pricing'
-					className='nav-link'
-				>
-					<li>Pricing</li>
-				</a>
-				<a
-					href='#booking'
-					className='nav-link'
-				>
-					<li>Booking</li>
-				</a>
-				<a
-					href='#career'
-					className='nav-link'
-				>
-					<li>Career</li>
-				</a>
+				{['pricing', 'about', 'career', 'booking'].map((item) => (
+					<a
+						key={`link-${item}`}
+						className='nav-link'
+						href={`#${item}`}
+					>
+						<li>{item}</li>
+					</a>
+				))}
 			</ul>
 		</nav>
 	);
