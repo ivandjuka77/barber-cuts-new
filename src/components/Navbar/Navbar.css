@@ -28,8 +28,11 @@
 	font-size: 1.1rem;
 }
 
-.nav-link {
-	margin: 0 15px;
+a {
 	color: inherit;
 	text-decoration-line: none;
+}
+
+.nav-link {
+	margin: 0 15px;
 }

@@ -3,7 +3,9 @@ import './Navbar.css';
 const Navbar = () => {
 	return (
 		<nav className='navbar'>
-			<h2 className='nav-logo-text'>Barber Cuts</h2>
+			<a href='#header'>
+				<h2 className='nav-logo-text'>Barber Cuts</h2>
+			</a>
 			<ul className='nav-links'>
 				<a
 					href='#about'

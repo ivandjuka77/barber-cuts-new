@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () => {
 	return (
-		<header>
+		<header id='header'>
 			<Navbar />
 			<div>
 				<video
@@ -26,7 +26,9 @@ const Header = () => {
 					Leave stress at the door and come enjoy the good vibes, <br />
 					good music and good people.
 				</h3>
-				<button className='header-reservation-btn'>Reserve a seat</button>
+				<a href='#booking'>
+					<button className='header-reservation-btn'>Reserve a seat</button>
+				</a>
 			</div>
 		</header>
 	);
